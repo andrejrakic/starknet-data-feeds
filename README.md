@@ -19,9 +19,9 @@ The boilerplate code for getting started with the usage of Chainlink services on
 Be sure to have installed the following
 
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Node.js](https://nodejs.org/en/download/)
+- [Node.js](https://nodejs.org/en/download/) in the `>=14 <=18` version range
 - [Yarn](https://yarnpkg.com/getting-started/install)
-- [Python](https://www.python.org/downloads/)
+- [Python](https://www.python.org/downloads/) in the `>=3.6 <=3.9` version range
 
 ### Clone the repository
 
@@ -43,6 +43,20 @@ Here you can see listed all of the commands from the mentioned quickstart guide.
 - `pip3 install ecdsa fastecdsa sympy`
 - `brew install gmp`
 - `pip3 install cairo-lang`
+
+Verify that all of the required tools are configured correctly:
+- Starknet CLI
+  - Run: `starknet -v`
+  - Expected output: `starknet 0.10.3`
+- Cairo CLI
+  - Run: `cairo-compile -v`
+  - Expected output: `cairo-compile 0.10.3`
+- NodeJS
+  - Run: `node -v`
+  - Expected output: `v18.12.1`
+- Yarn
+  - Run: `yarn --version`
+  - Expected output: `1.22.19`
 
 ### Compiling and running your first Cairo program
 
